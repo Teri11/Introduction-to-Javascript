@@ -13,6 +13,37 @@
   <title>Introduction to Javascript</title>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sharp Jr.Codes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <h1>Welcome to Introduction on JAVASCRIPT</h1>
     <p class="para1"><strong>programming language</strong> is a broad term that refers to a variety of different ways to instruct a computer. In a strict sense, a programming language is a set of syntactic and semantic rules that describe a formal language and must be able to express the steps that a machine must perform to convert some input to an output.
@@ -37,8 +68,58 @@
         <li>Use spaces between operators and operands to make your code less cluttered and easier to read:<br>
           let sum=x+5;              // bad<br>
           let sum = x + 5;          // good</li>
+          <li>Use semicolons to terminate each logical line of code unless the line ends with {, }, or :</li>
       </ul>
+      <p>That covers the essential style conventions that you need to get started. If you want more information about JavaScript styling, we recommend<a style="color: red;" href="https://github.com/airbnb/javascript"> Airbnb's JavaScript style guide</a>. Check it out, but don't try to memorize all of the rules right away.</p>
     </p>
+    <h2>Naming Conventions</h2>
+    <p>Although <strong>naming conventions</strong> are similar to<strong> style conventions</strong> (and are frequently discussed together), JavaScript naming conventions have more gray areas and complexity than most languages, so we'll discuss them separately.</p>
+    <ul>
+      <li>Use <strong>camelCase formatting</strong> for most variable and function names. Such names begin with a lowercase letter. If the name contains multiple words, each subsequent word should begin with an uppercase letter:<br>
+
+        let <strong>answerToUltimateQuestion</strong> = 42;      // initializing a variable<br>
+        function <strong>fourScoreAndSevenYearsAgo</strong> ()   { // defining a function
+
+          // do something
+        }</li>
+        <li>Some function names -- constructor functions -- should normally use <strong>PascalCase</strong> (also known as CamelCase -- with a capital C) names. For instance:
+        
+          function <strong>DomesticCat(name)</strong> {           // defining a function<br>
+            // do something
+          }
+        </li>
+        <li>Use uppercase names with underscores (SCREAMING_SNAKE_CASE) to represent constants that serve as <strong>unchanging configuration values</strong> in your program.<br>
+        
+          const <strong>INTEREST_RATE </strong>= 0.0525;<br>
+          const <strong>COURSE_NUMBER</strong> = 'JS101';<br>
+          const <strong>HOST</strong> = 'launchschool.com';<br>
+          const <strong>FIRST_LETTER</strong> = 'a';              // magic number<br> 
+          const <strong>LAST_LETTER </strong>= 'z';              
+        </li>
+    </ul>
+    <p>We also use SCREAMING_SNAKE_CASE for constants that represent so-called <strong>magic numbers</strong> (which may not actually be numbers) -- constants that are important to your program in some way but not as configuration values. For instance:<br>
+       
+      <span style="color: blue;">const</span> <strong>SECONDS_PER_MINUTE</strong> = 60;<br>
+      <span style="color: blue;">const</span><strong> OUNCES_PER_POUND</strong> = 16;<br>
+      <span style="color: blue;">const</span> <strong>METERS_PER_KILOMETER</strong> = 1000;<br>
+      <span style="color: blue;">const</span> <strong>PI </strong>= 3.141528;<br>
+      <span style="color: blue;">const </span><strong>INPUT_PROMPT</strong> = '==>';<br>
+      <span style="color: blue;">const</span> <strong>TODAY</strong> = new Date();
+    </p>
+    <p>For all other constants, the rules are much more flexible. You may use <strong>camelCase, PascalCase, or even SCREAMING_SNAKE_CASE</strong>. Use your personal preferences and any guidelines laid out by your teammates to choose your style.<br>
+    
+      <span style="color: blue;">const</span> <strong>greetings</strong> = `Hi! How are you today?`;<br>
+      <span style="color: blue;">const</span> <strong>DeleteAllTodoLists</strong>  = "DELETE FROM todolists";<br>
+      <span style="color: blue;">const</span>  <strong>FIND_TODOLIST</strong> = `SELECT * FROM todolists WHERE id = ${id}`;
+    </p>
+    <p><strong>All names -- variables and constants as well as functions</strong> -- should use the alphabetic and numeric characters only, though SCREAMING_SNAKE_CASE names may use underscores as well. The first character must be alphabetic. Do not use consecutive underscores nor should you use names with underscores at the start or end of the name.</p>
+    <h2>On Semicolons</h2>
+    <p>Most JavaScript documentation, books, and articles show code that uses semicolons (;) to terminate most statements and expressions, resulting in code that looks like this:<br>
+
+      let x = 3;<br>
+      let y = 5;
+    </p>
+    <p>most lines end with a semicolon; there are exceptions like blank lines and lines that end with { or } and a few other situations. </p>
   </div>
 
 
@@ -49,4 +130,5 @@
 
 </body>
 <script src="main.js"></script>
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
