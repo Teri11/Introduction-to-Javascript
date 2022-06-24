@@ -3,7 +3,8 @@
   color: grey;
 }
 
-.container >p{
+.container >p,ul{
   color: black;
   font-family: 'Times New Roman', Times, serif;
+  font-size: large;
 }
