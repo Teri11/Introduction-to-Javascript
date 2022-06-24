@@ -1,1 +1,1 @@
-alert("Welcome to Introduction to Javascript");
+// alert("Welcome to Introduction to Javascript");
